@@ -22,8 +22,8 @@
                 <param name="android-package" value="com.powerall.plugin.barcodescanner.BarcodeScanner"/>
             </feature>
         </config-file>
-
-        <config-file target="AndroidManifest.xml" parent="/*">
+		
+		<config-file target="AndroidManifest.xml" parent="/application">  	
 			<activity android:name="com.google.zxing.client.android.CaptureActivity"  
 			  android:screenOrientation="landscape"  
 			  android:clearTaskOnLaunch="true"  
@@ -47,8 +47,10 @@
 					<action android:name="android.intent.action.VIEW"/>  
 					<category android:name="android.intent.category.DEFAULT"/>  
 				</intent-filter>  
-			</activity>  
+			</activity>
+		</config-file>
 		
+        <config-file target="AndroidManifest.xml" parent="/*">  		
 			<uses-permission android:name="android.permission.CAMERA" />  
 			<uses-permission android:name="android.permission.VIBRATE" />  
 			<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />  
