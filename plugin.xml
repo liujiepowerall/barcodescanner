@@ -73,7 +73,7 @@
         </config-file>
 
         <source-file src="src/android/BarcodeScanner.java" target-dir="src/com/powerall/plugin/barcodescanner" />
-        <!--<source-file src="barcode_scanner_strings.xml" target-dir="res/values" />-->
+        <source-file src="barcode_scanner_strings.xml" target-dir="res/values" />
     </platform>  
 
 </plugin>
